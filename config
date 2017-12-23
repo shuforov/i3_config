@@ -214,14 +214,14 @@ new_window 1pixel
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-    mode hide
-    font pango:Free Sans 8
-    #font pango:Monaco 6
-    #font pango:Inconsolata 7
-    position top
+# bar {
+    # mode hide
+    # font pango:Free Sans 8
+    # font pango:Monaco 6
+    # font pango:Inconsolata 7
+    # position top
     #separator_symbol "| |"
-    status_command ~/.config/bumblebee-status/bumblebee-status -m disk:root sensors brightness battery memory nic pasink datetime -p root.path=/ -t powerline
+    # status_command ~/.config/bumblebee-status/bumblebee-status -m disk:root sensors brightness battery memory nic pasink datetime -p root.path=/ -t powerline
     #status_command i3status
     #status_command dzen2
     #status_command i3blocks
@@ -239,18 +239,19 @@ bar {
     #     inactive_workspace #454545 #454545 #ffffff
     #     urgent_workspace   #454545 #454545 #ffffff
     # }
-}
+# }
 
 exec killall -q /usr/lib/x86_64-linux-gnu/notify-osd
 exec --no-startup-id dunst -config ~/.config/i3/dunstrc1
 exec --no-startup-id xsetroot -solid "#333333"
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh #status barg
 exec redshift-gtk
 exec /home/oleg/.config/.language.sh
 exec /home/oleg/.config/.multiscreen.sh
 exec --no-startup-id nm-applet
 exec --no-startup-id unclutter
 exec messengerfordesktop
-exec hipchat
+# exec hipchat
 exec skypeforlinux
 exec firefox
 exec emacs
