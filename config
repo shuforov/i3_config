@@ -252,7 +252,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id unclutter
 exec messengerfordesktop
 exec skypeforlinux
-exec firefox
+exec 
 exec emacs
 exec xset s off
 exec xset -dpms
