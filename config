@@ -253,7 +253,7 @@ exec --no-startup-id unclutter
 exec messengerfordesktop
 # exec hipchat
 exec skypeforlinux
-exec firefox
+# exec firefox
 exec emacs
 exec xset s off
 exec xset -dpms
