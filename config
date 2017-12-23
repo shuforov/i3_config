@@ -251,7 +251,6 @@ exec /home/oleg/.config/.multiscreen.sh
 exec --no-startup-id nm-applet
 exec --no-startup-id unclutter
 exec messengerfordesktop
-# exec hipchat
 exec skypeforlinux
 exec firefox
 exec emacs
